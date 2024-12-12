@@ -10,17 +10,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className='relative min-h-screen'>
-				{children}
-				<Fab
-					size='small'
-					color='warning'
-					aria-label='add'
-					href='/'
-					className='fixed bottom-6 right-6'
-				>
-					<HomeRoundedIcon />
-				</Fab>
+			<body className='relative'>
+				<div>{children}</div>
+				<div className='fixed bottom-6 right-6'>
+					<Fab
+						size='small'
+						color='warning'
+						aria-label='add'
+						href='/'
+					>
+						<HomeRoundedIcon />
+					</Fab>
+				</div>
 			</body>
 		</html>
 	)
