@@ -86,8 +86,8 @@ const Todo = () => {
 
 	return (
 		<div className='bg-gray-200 flex flex-col items-center space-y-10 py-10 w-[100vw] max-w-[100vw] min-h-screen max-h-[100%]'>
-			<div className='flex flex-col items-center space-y-2 w-[90%] sm:w-[70%] md:w-[40%]'>
-				<h1 className='text-center text-black text-4xl md:text-5xl font-bold mb-2'>
+			<div className='flex flex-col items-center space-y-4 w-[90%] sm:w-[60%] md:w-[40%]'>
+				<h1 className='text-center text-black text-4xl md:text-5xl font-bold'>
 					To Do
 				</h1>
 				<div className='flex flex-col items-center space-y-2 w-full'>
@@ -123,7 +123,9 @@ const Todo = () => {
 
 			{tasks.length > 0 ? (
 				<div className='flex flex-col items-start w-[90%]'>
-					<h2 className='text-black text-3xl font-semibold '>To-do list:</h2>
+					<h2 className='text-black text-2xl md:text-3xl font-semibold '>
+						To-do list:
+					</h2>
 					<ul className='flex flex-col justify-center items-center w-full'>
 						{tasks.map((task, index) => (
 							<li
@@ -136,8 +138,8 @@ const Todo = () => {
 							>
 								<div className='flex justify-between items-center w-full'>
 									<h4 className='text-black text-md md:text-2xl w-[80%]'>
-										{task.title.length > 20
-											? `${task.title.substring(0, 20)}...`
+										{task.title.length > 35
+											? `${task.title.substring(0, 35)}...`
 											: task.title}
 									</h4>
 									<div className='flex justify-between space-x-2'>

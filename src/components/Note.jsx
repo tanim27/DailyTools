@@ -93,7 +93,7 @@ const Note = () => {
 
 	return (
 		<div className='bg-gray-200 flex flex-col items-center space-y-10 py-10 w-[100vw] max-w-[100vw] min-h-screen max-h-[100%]'>
-			<div className='flex flex-col items-center space-y-2 w-[90%] sm:w-[70%] md:w-[40%]'>
+			<div className='flex flex-col items-center space-y-4 w-[90%] sm:w-[60%] md:w-[40%]'>
 				<h1 className='text-center text-black text-4xl md:text-5xl font-bold'>
 					Create your note here
 				</h1>
@@ -136,7 +136,9 @@ const Note = () => {
 
 			{notes.length > 0 ? (
 				<div className='flex flex-col items-start w-[90%]'>
-					<h2 className='text-black text-3xl font-semibold'>All notes:</h2>
+					<h2 className='text-black text-2xl md:text-3xl font-semibold'>
+						All notes:
+					</h2>
 					<ul className='flex-col justify-center items-center w-full'>
 						{notes.map((note, index) => (
 							<li
