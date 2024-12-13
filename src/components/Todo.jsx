@@ -85,36 +85,39 @@ const Todo = () => {
 	}
 
 	return (
-		<div className='h-[100vh] flex flex-col items-center bg-gray-200 py-10'>
-			<h1 className='text-center text-black text-5xl font-bold mb-5'>To Do</h1>
-
-			<div className='flex flex-col items-center space-y-2 mb-5 w-[90%] sm:w-[70%] md:w-[40%]'>
-				<input
-					type='text'
-					placeholder='Task name'
-					value={task}
-					onChange={(event) => setTask(event.target.value)}
-					className='text-black px-4 py-2 border rounded-lg shadow focus:outline-none focus:border-blue-500 w-full'
-				/>
-				<div className='flex justify-between w-full'>
-					<Button
-						size='small'
-						variant='contained'
-						color='success'
-						startIcon={<AddIcon />}
-						onClick={addTask}
-					>
-						Add
-					</Button>
-					<Button
-						size='small'
-						variant='contained'
-						color='error'
-						startIcon={<DeleteRoundedIcon />}
-						onClick={handleDeleteAll}
-					>
-						Delete All
-					</Button>
+		<div className='bg-gray-200 flex flex-col items-center space-y-10 py-10 w-[100vw] max-w-[100vw] min-h-screen max-h-[100%]'>
+			<div className='flex flex-col items-center space-y-2 w-[90%] sm:w-[70%] md:w-[40%]'>
+				<h1 className='text-center text-black text-5xl font-bold mb-2'>
+					To Do
+				</h1>
+				<div className='flex flex-col items-center space-y-2 w-full'>
+					<input
+						type='text'
+						placeholder='Task name'
+						value={task}
+						onChange={(event) => setTask(event.target.value)}
+						className='text-black px-4 py-2 border rounded-lg shadow focus:outline-none focus:border-blue-500 w-full'
+					/>
+					<div className='flex justify-between w-full'>
+						<Button
+							size='small'
+							variant='contained'
+							color='success'
+							startIcon={<AddIcon />}
+							onClick={addTask}
+						>
+							Add
+						</Button>
+						<Button
+							size='small'
+							variant='contained'
+							color='error'
+							startIcon={<DeleteRoundedIcon />}
+							onClick={handleDeleteAll}
+						>
+							Delete All
+						</Button>
+					</div>
 				</div>
 			</div>
 
@@ -160,7 +163,7 @@ const Todo = () => {
 					</ul>
 				</div>
 			) : (
-				<div className='flex justify-center items-center py-20'>
+				<div className='flex justify-center items-center  w-[90%]'>
 					<h2 className='font-bold text-3xl sm:text-4xl md:text-5xl text-gray-600'>
 						Empty!
 					</h2>
