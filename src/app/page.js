@@ -1,3 +1,5 @@
+'use client'
+
 import FormatListBulletedRoundedIcon from '@mui/icons-material/FormatListBulletedRounded'
 import NotesRoundedIcon from '@mui/icons-material/NotesRounded'
 import { Button } from '@mui/material'
