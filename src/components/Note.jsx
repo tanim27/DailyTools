@@ -144,7 +144,7 @@ const Note = () => {
 								className='flex flex-col bg-white text-black px-4 py-2 mb-2 rounded shadow w-full'
 							>
 								<div className='flex justify-between items-center w-full'>
-									<h4 className='text-2xl sm:text-xl font-semibold w-[80%]'>
+									<h4 className='text-black text-xl md:text-2xl font-semibold w-[80%]'>
 										{note.name.length > 20
 											? `${note.name.substring(0, 20)}...`
 											: note.name}

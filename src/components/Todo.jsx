@@ -87,7 +87,7 @@ const Todo = () => {
 	return (
 		<div className='bg-gray-200 flex flex-col items-center space-y-10 py-10 w-[100vw] max-w-[100vw] min-h-screen max-h-[100%]'>
 			<div className='flex flex-col items-center space-y-2 w-[90%] sm:w-[70%] md:w-[40%]'>
-				<h1 className='text-center text-black text-5xl font-bold mb-2'>
+				<h1 className='text-center text-black text-4xl md:text-5xl font-bold mb-2'>
 					To Do
 				</h1>
 				<div className='flex flex-col items-center space-y-2 w-full'>
@@ -135,7 +135,7 @@ const Todo = () => {
 								}`}
 							>
 								<div className='flex justify-between items-center w-full'>
-									<h4 className='text-2xl sm:text-xl font-semibold w-[80%]'>
+									<h4 className='text-black text-md md:text-2xl w-[80%]'>
 										{task.title.length > 20
 											? `${task.title.substring(0, 20)}...`
 											: task.title}
