@@ -92,7 +92,7 @@ const Note = () => {
 	}
 
 	return (
-		<div className='min-h-screen flex flex-col items-center bg-gray-200 py-10'>
+		<div className='h-[100vh] flex flex-col items-center bg-gray-200 py-10'>
 			<h1 className='text-center text-black text-5xl font-bold mb-5'>
 				Create your note here
 			</h1>

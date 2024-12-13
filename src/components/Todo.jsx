@@ -85,7 +85,7 @@ const Todo = () => {
 	}
 
 	return (
-		<div className='min-h-screen flex flex-col items-center bg-gray-200 py-10'>
+		<div className='h-[100vh] flex flex-col items-center bg-gray-200 py-10'>
 			<h1 className='text-center text-black text-5xl font-bold mb-5'>To Do</h1>
 
 			<div className='flex flex-col items-center space-y-2 mb-5 w-[90%] sm:w-[70%] md:w-[40%]'>
