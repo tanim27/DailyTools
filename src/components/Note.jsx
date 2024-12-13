@@ -146,12 +146,11 @@ const Note = () => {
 								className='flex flex-col bg-white text-black px-4 py-2 mb-2 rounded shadow w-full'
 							>
 								<div className='flex justify-between items-center w-full'>
-									<h4 className='text-black text-xl md:text-2xl font-semibold w-[80%]'>
-										{note.name.length > 20
-											? `${note.name.substring(0, 20)}...`
+									<h4 className='text-black text-lg md:text-2xl truncate w-full'>
+										{note.name.length > 35
+											? `${note.name.substring(0, 35)}...`
 											: note.name}
 									</h4>
-
 									<div className='flex justify-between'>
 										<IconButton
 											aria-label='edit'
@@ -169,7 +168,7 @@ const Note = () => {
 										</IconButton>
 									</div>
 								</div>
-								<p className='text-gray-600'>
+								<p className='text-sm md:text-base text-gray-600 truncate w-full'>
 									{note.description.length > 50
 										? `${note.description.substring(0, 50)}...`
 										: note.description}

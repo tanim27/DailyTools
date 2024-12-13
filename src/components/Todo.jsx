@@ -130,19 +130,17 @@ const Todo = () => {
 						{tasks.map((task, index) => (
 							<li
 								key={index}
-								className={`flex flex-col px-4 py-2 mb-2 rounded shadow w-full ${
-									task.completed
-										? 'bg-green-200 text-black line-through'
-										: 'bg-white text-black'
+								className={`text-black flex flex-col px-4 py-2 mb-2 rounded shadow w-full ${
+									task.completed ? 'bg-green-200 line-through' : 'bg-white'
 								}`}
 							>
 								<div className='flex justify-between items-center w-full'>
-									<h4 className='text-black text-md md:text-2xl w-[80%]'>
+									<h4 className='text-black text-md md:text-2xl truncate w-full'>
 										{task.title.length > 35
 											? `${task.title.substring(0, 35)}...`
 											: task.title}
 									</h4>
-									<div className='flex justify-between space-x-2'>
+									<div className='flex justify-between'>
 										<IconButton
 											aria-label='mark as done'
 											onClick={() => toggleTaskCompletion(index)}
