@@ -6,7 +6,7 @@ import { Button } from '@mui/material'
 
 const page = () => {
 	return (
-		<div className='flex justify-center items-center bg-gray-200 w-full'>
+		<div className='flex justify-center items-center bg-gray-200 w-full max-h-[100vh] h-screen'>
 			<div className='flex flex-col md:flex-row justify-between items-center space-y-5 md:space-y-0 w-[90%] md:w-[30%] sm:w-[60%]'>
 				<div>
 					<Button
