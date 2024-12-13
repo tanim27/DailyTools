@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className='relative'>
-				<div className=''>{children}</div>
+				<div className='h-[100vh]'>{children}</div>
 				{/* <div>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
 					laudantium maxime, omnis vero voluptatum in adipisci assumenda quis
